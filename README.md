@@ -23,11 +23,14 @@ User Microservice
 
 * GET /users/getUser?email&password
 * POST /users/postUser
+* PUT /users/updateUser
 
 Product Microservice
 
 * GET /products/getProducts
-* GET /products/getProduct/{id}
+* GET /products/getProduct?name
+* POST /products/postProduct
+* PUT /products/updateProduct?seriesNum
 
 Shopping Cart Microservice
 
