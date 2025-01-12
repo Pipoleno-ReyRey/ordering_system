@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bG8bmcgGqAjTdPmON+G3WtpIfnvC+LjpQevYzBjEp8M=",
+  "Source": "shopping_cart",
+  "BasePath": "_content/shopping_cart",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,12 +1,13 @@
 ﻿Console.Write("1 - sign in \n2 - sign up \noption: ");
 string response = Console.ReadLine()!;
+User user;
 
 if(response == "1"){
     Console.Write("email:");
     string email = Console.ReadLine()!;
     Console.Write("password:");
     string password = Console.ReadLine()!;
-    User user = await User.GetUser(email, password);
+    user = await User.GetUser(email, password);
     Console.WriteLine("---------------------------------");
     Console.WriteLine($"name:{user.name} \naddress:{user.address} \nemail:{user.email} \npassword:{user.password}");
     Console.WriteLine("---------------------------------");
@@ -20,7 +21,7 @@ if(response == "1"){
     string email = Console.ReadLine()!;
     Console.Write("password:");
     string password = Console.ReadLine()!;
-    User user = await User.CreateUser(name, address, email, password);
+    user = await User.CreateUser(name, address, email, password);
     Console.WriteLine("----------Created User-----------------------");
     Console.WriteLine($"name:{user.name} \naddress:{user.address} \nemail:{user.email} \npassword:{user.password}");
     Console.WriteLine("---------------------------------");
