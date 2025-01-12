@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/P8FJAQBPkE=",
+  "dgSpecHash": "Mo1FvEnQWnM=",
   "success": true,
   "projectFilePath": "D:\\ordering_system\\app_pedidos\\app_pedidos.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\reysu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
