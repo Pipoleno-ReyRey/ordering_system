@@ -21,16 +21,17 @@ Run the console app to interact with them.
 # API
 User Microservice
 
-GET /users/getUser?email&password
-
-POST /users/postUser
+* GET /users/getUser?email&password
+* POST /users/postUser
 
 Product Microservice
 
-GET /products/getProducts
-GET /products/getProduct/{id}
+* GET /products/getProducts
+* GET /products/getProduct/{id}
 
 Shopping Cart Microservice
 
-GET /cart/getCart?userId
-POST /cart/postCart?userId
+* GET /cart/getCart?userId
+* POST /cart/postCart?userId
+* PUT /cart/updateCartAdd?userId&product&amount
+* PUT /cart/updateCartRemove?userId&product&amount
