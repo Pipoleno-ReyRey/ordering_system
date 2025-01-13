@@ -1,4 +1,3 @@
-# ordering_system
 # Microservices Project in C#
 This project simulates an online shopping system with three microservices:
 
