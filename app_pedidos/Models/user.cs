@@ -45,4 +45,24 @@ public class User{
             return new User(0, "nada", "nada", "nada", "nada");
         }
     }
+
+    public static async Task<string> UpdateUser(string email, string password, string name, string address, string newPassword){
+        User user = await GetUser(email, password);
+
+        user.name = name;
+        user.address = address;
+        user.password = newPassword;
+
+        var json = JsonSerializer.Serialize(user);
+        string url = $"https://users-image.onrender.com/users/updateUser?email={email}&password={password}";
+        var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+        HttpResponseMessage responseMessage = await httpClient.PutAsync(url, content);
+
+        if(responseMessage.IsSuccessStatusCode){
+            return "USER UPDATED!";
+        } else{
+            return "USER NOT UPDATED";
+        }
+    }
 }

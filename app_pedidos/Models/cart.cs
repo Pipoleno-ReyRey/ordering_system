@@ -1,4 +1,5 @@
 using System.Security.Cryptography;
+using System.Text.Json;
 
 public class Cart{
     public int id {get; set;}
@@ -12,7 +13,25 @@ public class Cart{
     }
 
     public static async Task<Cart> GetCart(int userId){
-        
+        HttpResponseMessage responseMessage = await httpClient.GetAsync($"https://shopping-cart-l4vk.onrender.com/cart/getCart?userId={userId}");
+        if(responseMessage.IsSuccessStatusCode){
+            string response = await responseMessage.Content.ReadAsStringAsync();
+            Cart cart = JsonSerializer.Deserialize<Cart>(response)!;
+            return cart;
+        } else{
+            return new Cart(0, 0);
+        }
+    }
+
+    public static async Task<string> AddToCart(int userId, string nameProduct, int amount){
+        string url = $"https://shopping-cart-l4vk.onrender.com/cart/updateCartAdd?userId={userId}&product={nameProduct}&amount={amount}";
+        HttpResponseMessage responseMessage = await httpClient.PutAsync(url, null);
+
+        if(responseMessage.IsSuccessStatusCode){
+            return "product added to shopping cart";
+        } else {
+            return "didnt added product to shoping cart";
+        }
     }
 }
 
