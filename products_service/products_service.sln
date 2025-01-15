@@ -5,10 +5,6 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "products_service", "products_service.csproj", "{17B46252-40E9-414C-A6F9-413AA9798B94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ordering_cart", "..\ordering_cart\ordering_cart.csproj", "{7DFF8B29-05C7-47CE-9855-0FB7E7188FB4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app_pedidos", "..\app_pedidos\app_pedidos.csproj", "{642FDDA0-084C-4E48-A0D9-5AD2C406C046}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
