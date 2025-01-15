@@ -1,6 +1,4 @@
-# ordering_system
-# Microservices Project in C# - Shopping System
-Description
+# Microservices Project in C#
 This project simulates an online shopping system with three microservices:
 
 Users: Manages authentication and registration.
@@ -10,13 +8,10 @@ It includes a console app that consumes these services.
 
 # Instructions
 
-Clone the repository.
-
-Open each microservice in Visual Studio or VS Code.
-
-Run the microservices.
-
-Run the console app to interact with them.
+* Clone the repository.
+* Open each microservice in Visual Studio or VS Code.
+* Run the microservices.
+* Run the console app to interact with them.
 
 # API
 User Microservice
